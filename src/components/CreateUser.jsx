@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, axios } from "react";
 
 const CreateUser = () => {
   const [inputs, setInputs] = useState({});
@@ -11,6 +11,7 @@ const CreateUser = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    axios.post("http://localhost:8005/api", inputs);
     console.log(inputs);
   };
   return (
