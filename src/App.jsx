@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import ListUser from "./components/ListUser";
-import CreateUser from "./components/CreateUser";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ListUser from "./components/ListUser.jsx";
+import CreateUser from "./components/CreateUser.jsx";
 
 function App() {
   return (
     <div className="App">
-      <h1>Full Stack App</h1>
+      <h4>Full stack app</h4>
       <BrowserRouter>
         <nav>
           <ul>
